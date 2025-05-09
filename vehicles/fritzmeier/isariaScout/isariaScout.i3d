@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<i3D name="isariaScout.i3d" version="1.6" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="http://i3d.giants.ch/schema/i3d-1.6.xsd">
+  <Asset>
+    <Export program="GIANTS Editor 64bit" version="10.0.4"/>
+  </Asset>
+
+  <Files>
+    <File fileId="5" filename="$data/shaders/vehicleShader.xml"/>
+    <File fileId="28" filename="$data/shared/assets/assetLibraryDecals_diffuse.png"/>
+    <File fileId="29" filename="$data/shared/assets/assetLibraryDecals_normal.png"/>
+    <File fileId="40" filename="$data/shared/assets/assetLibraryStickers_diffuse.png"/>
+    <File fileId="33" filename="$data/shared/clearPlastic_diffuse.png"/>
+    <File fileId="39" filename="$data/shared/default_normal.png"/>
+    <File fileId="17" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_diffuse.png"/>
+    <File fileId="16" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_normal.png"/>
+    <File fileId="15" filename="$data/shared/detailLibrary/calibrated/calibratedPaint_specular.png"/>
+    <File fileId="22" filename="$data/shared/detailLibrary/calibrated/grainSmall_specular.png"/>
+    <File fileId="7" filename="$data/shared/detailLibrary/flat_normal.png"/>
+    <File fileId="21" filename="$data/shared/detailLibrary/metallic/clear_diffuse.png"/>
+    <File fileId="20" filename="$data/shared/detailLibrary/metallic/clear_specular.png"/>
+    <File fileId="34" filename="$data/shared/detailLibrary/metallic/rough_specular.png"/>
+    <File fileId="14" filename="$data/shared/detailLibrary/metallic/silverScratched_diffuse.png"/>
+    <File fileId="13" filename="$data/shared/detailLibrary/metallic/silverScratched_specular.png"/>
+    <File fileId="8" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_diffuse.png"/>
+    <File fileId="6" filename="$data/shared/detailLibrary/nonMetallic/metal/metalPainted_specular.png"/>
+    <File fileId="19" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_diffuse.png"/>
+    <File fileId="18" filename="$data/shared/detailLibrary/nonMetallic/plastic/plasticPainted_specular.png"/>
+    <File fileId="27" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_diffuse.png"/>
+    <File fileId="26" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_normal.png"/>
+    <File fileId="25" filename="$data/shared/detailLibrary/nonMetallic/rubber/rubber_specular.png"/>
+    <File fileId="2" filename="$data/shared/white_diffuse.png"/>
+    <File fileId="38" filename="isariaScoutDecals_diffuse.png"/>
+    <File fileId="35" filename="isariaScoutGrid_diffuse.png"/>
+    <File fileId="36" filename="isariaScoutGrid_normal.png"/>
+    <File fileId="37" filename="isariaScoutGrid_vmask.png"/>
+    <File fileId="23" filename="isariaScoutHoses_normal.png"/>
+    <File fileId="24" filename="isariaScoutHoses_vmask.png"/>
+    <File fileId="3" filename="isariaScout_normal.png"/>
+    <File fileId="4" filename="isariaScout_vmask.png"/>
+  </Files>
+
+
+  <Materials>
+    <Material name="isariaScout_chrome_mat" materialId="737" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="20"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="21"/>
+    </Material>
+    <Material name="isariaScout_dirt_mat" materialId="738" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <CustomParameter name="colorScale" value="0.2 0.14 0.08"/>
+      <CustomParameter name="porosity" value="1"/>
+    </Material>
+    <Material name="isariaScout_metalPainted_01_mat" materialId="739" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="15"/>
+      <Custommap name="detailNormal" fileId="16"/>
+      <Custommap name="detailDiffuse" fileId="17"/>
+      <CustomParameter name="colorScale" value="0.0027 0.0704 0.2502"/>
+      <CustomParameter name="smoothnessScale" value="0.85"/>
+      <CustomParameter name="clearCoatIntensity" value="0.1"/>
+      <CustomParameter name="clearCoatSmoothness" value="0.2"/>
+    </Material>
+    <Material name="isariaScout_metalPainted_02_mat" materialId="740" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.073 0.073 0.073"/>
+    </Material>
+    <Material name="isariaScout_metalPainted_03_mat" materialId="741" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.521 0 0"/>
+    </Material>
+    <Material name="isariaScout_metalPainted_04_mat" materialId="742" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="40"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+    </Material>
+    <Material name="isariaScout_metalPaintedBlack_01_mat" materialId="743" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="isariaScout_metalPaintedBlack_02_mat" materialId="744" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="isariaScout_metalPaintedGraphite_mat" materialId="745" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="22"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="21"/>
+      <CustomParameter name="colorScale" value="0 0.07 0.25"/>
+    </Material>
+    <Material name="isariaScout_plasticPaintedBlack_mat" materialId="746" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="18"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="19"/>
+      <CustomParameter name="colorScale" value="0.012 0.012 0.012"/>
+    </Material>
+    <Material name="isariaScout_silverRough_mat" materialId="747" alphaBlending="true" customShaderId="5">
+      <Texture fileId="33"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="34"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="21"/>
+      <CustomParameter name="colorScale" value="0.7379 0.7454 0.7529"/>
+      <CustomParameter name="alphaBlendingClipThreshold" value="0"/>
+    </Material>
+    <Material name="isariaScout_silverScratched_01_mat" materialId="748" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="colorScale" value="0.8632 0.8713 0.8713"/>
+    </Material>
+    <Material name="isariaScout_silverScratched_02_mat" materialId="749" customShaderId="5">
+      <Texture fileId="2"/>
+      <Normalmap fileId="3"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+    </Material>
+    <Material name="isariaScout_silverScratched_03_mat" materialId="750" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="28"/>
+      <Normalmap fileId="29"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+    </Material>
+    <Material name="isariaScout_silverScratched_04_mat" materialId="751" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="40"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+    </Material>
+    <Material name="isariaScoutDecals_metalPainted_mat" materialId="752" alphaBlending="true" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="38"/>
+      <Normalmap fileId="39"/>
+      <Glossmap fileId="4"/>
+      <Custommap name="detailSpecular" fileId="6"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="8"/>
+    </Material>
+    <Material name="isariaScoutGrid_silverScratched_mat" materialId="753" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="35"/>
+      <Normalmap fileId="36"/>
+      <Glossmap fileId="37"/>
+      <Custommap name="detailSpecular" fileId="13"/>
+      <Custommap name="detailNormal" fileId="7"/>
+      <Custommap name="detailDiffuse" fileId="14"/>
+      <CustomParameter name="colorScale" value="0.8632 0.8713 0.8713"/>
+    </Material>
+    <Material name="isariaScoutHoses_rubber_mat" materialId="754" customShaderId="5" customShaderVariation="vmaskUV2">
+      <Texture fileId="2"/>
+      <Normalmap fileId="23"/>
+      <Glossmap fileId="24"/>
+      <Custommap name="detailSpecular" fileId="25"/>
+      <Custommap name="detailNormal" fileId="26"/>
+      <Custommap name="detailDiffuse" fileId="27"/>
+      <CustomParameter name="colorScale" value="0.0094 0.0094 0.0094"/>
+      <CustomParameter name="porosity" value="0.5"/>
+    </Material>
+    <Material name="lambert1" materialId="755" diffuseColor="0.501961 0.501961 0.501961 1">
+    </Material>
+  </Materials>
+
+
+  <Shapes externalShapesFile="isariaScout.i3d.shapes">
+  </Shapes>
+
+  <Scene>
+    <Shape name="isariaScout_main_component1" shapeId="1" dynamic="true" compound="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" clipDistance="300" nodeId="786" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="755">
+      <Shape name="isariaScout_vis" shapeId="2" clipDistance="300" nodeId="787" castsShadows="true" receiveShadows="true" skinBindNodeIds="787 802 803 804 805 806 811 813 819 820 822 841 842" materialIds="743,748,739,749,746,737,740,741,745">
+        <TransformGroup name="attachable" nodeId="788">
+          <TransformGroup name="attacherJoint" translation="0 0.374134 0.272288" rotation="0 90 0" nodeId="789"/>
+          <TransformGroup name="topReferenceNode" translation="0 0.958361 0.277424" nodeId="790"/>
+          <TransformGroup name="support" nodeId="791">
+            <Shape name="supportFeet" shapeId="3" clipDistance="100" nodeId="792" castsShadows="true" receiveShadows="true" materialIds="739">
+              <Shape name="colPart" translation="0 0.227349 0.298926" shapeId="4" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="793" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="755"/>
+            </Shape>
+          </TransformGroup>
+          <TransformGroup name="connectionHoses" nodeId="794">
+            <TransformGroup name="hydraulicIn01" translation="-0.298698 0.563924 0.346158" nodeId="795">
+              <Shape name="hydraulic_detached" translation="0.188347 0.439317 -0.145349" shapeId="5" clipDistance="300" nodeId="796" castsShadows="true" receiveShadows="true" materialIds="754">
+                <TransformGroup name="hydraulic_connector01" translation="-0.17944 0.340011 -0.075359" rotation="82.4848 88.4179 -180" nodeId="797"/>
+                <TransformGroup name="hydraulic_connector02" translation="-0.180446 0.340075 -0.111464" rotation="145.293 87.2444 -117.158" nodeId="798"/>
+                <Shape name="detail_mesh" translation="0.029651 -0.041786 0.050891" shapeId="6" clipDistance="300" nodeId="799" castsShadows="true" receiveShadows="true" materialIds="749"/>
+              </Shape>
+            </TransformGroup>
+            <TransformGroup name="hydraulicOut01" translation="-0.14323 0.578943 0.417917" rotation="0 -81.7836 0" nodeId="800"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="movingParts" nodeId="801">
+          <TransformGroup name="drillingUnit" clipDistance="300" nodeId="802">
+            <TransformGroup name="drillMotor" clipDistance="300" nodeId="803">
+              <TransformGroup name="drill" translation="-0.002 1.37312 -0.072853" clipDistance="300" nodeId="804"/>
+            </TransformGroup>
+            <TransformGroup name="drillMotorHydraulic" translation="-0.0855 1.72 -0.033612" clipDistance="300" nodeId="805">
+              <TransformGroup name="drillMotorHydraulicPunch" clipDistance="300" nodeId="806"/>
+              <TransformGroup name="drillHydraulicJoint" nodeId="807"/>
+              <Shape name="hoses" shapeId="7" clipDistance="300" nodeId="808" castsShadows="true" receiveShadows="true" materialIds="754"/>
+              <Shape name="holeDecal" translation="0.0855 -0.000341 -0.037904" shapeId="8" clipDistance="30" nodeId="809" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="744"/>
+              <Shape name="colPart03" translation="0.0855 0.598865 -0.02675" shapeId="9" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="810" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="755"/>
+            </TransformGroup>
+            <TransformGroup name="drillMotorHydraulicLock" translation="0.059844 1.758 0.079748" clipDistance="300" nodeId="811"/>
+            <Shape name="drillMotorHydraulicPunchLock" shapeId="10" clipDistance="30" nodeId="812" castsShadows="true" receiveShadows="true" materialIds="748"/>
+            <TransformGroup name="sampleContainers" clipDistance="300" nodeId="813">
+              <TransformGroup name="sampleContainersHydraulicRef" translation="-0.442177 0.162334 -0.020524" rotation="-180 -89.1 180" nodeId="814"/>
+              <Shape name="soilSample01" translation="-0.22992 0.033789 -0.152193" shapeId="11" clipDistance="30" nodeId="815" castsShadows="true" receiveShadows="true" materialIds="738"/>
+              <Shape name="soilSample02" translation="-0.096761 0.033789 -0.152193" shapeId="12" clipDistance="30" nodeId="816" castsShadows="true" receiveShadows="true" materialIds="738"/>
+              <Shape name="soilSample03" translation="0.03642 0.033789 -0.152193" shapeId="13" clipDistance="30" nodeId="817" castsShadows="true" receiveShadows="true" materialIds="738"/>
+              <Shape name="containers_alpha" shapeId="14" clipDistance="300" nodeId="818" castsShadows="true" receiveShadows="true" materialIds="747"/>
+            </TransformGroup>
+            <TransformGroup name="sampleContainersHydraulic" translation="0.141744 0.162337 -0.011351" rotation="-180 -89.1 180" clipDistance="300" nodeId="819">
+              <TransformGroup name="sampleContainersHydraulicPunch" translation="0 0 0.583994" clipDistance="300" nodeId="820"/>
+              <TransformGroup name="sampleContainersHydraulicJoint" nodeId="821"/>
+            </TransformGroup>
+            <TransformGroup name="backCover" translation="0 0.197454 0.010116" clipDistance="300" nodeId="822">
+              <Shape name="coverGrid" translation="0 0.176047 0.214532" shapeId="15" clipDistance="300" nodeId="823" castsShadows="true" receiveShadows="true" materialIds="753"/>
+              <Shape name="decals" translation="0.000196 1.25905 -0.236187" shapeId="16" clipDistance="50" nodeId="824" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="752"/>
+              <Shape name="screw_decals" translation="0 0.176047 0.214532" shapeId="17" clipDistance="30" nodeId="825" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="750"/>
+              <Shape name="stickersDecal" shapeId="18" clipDistance="30" nodeId="826" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="742"/>
+            </TransformGroup>
+            <TransformGroup name="connectionHoses" nodeId="827">
+              <TransformGroup name="electric" translation="-0.223288 0.809977 0.163367" rotation="0 -82.3643 0" nodeId="828">
+                <Shape name="electric_detached" shapeId="19" clipDistance="300" nodeId="829" castsShadows="true" receiveShadows="true" materialIds="754">
+                  <TransformGroup name="electric_connector" translation="0.032445 -0.14549 0.057168" rotation="98.4252 -4.69986 -9.68754" nodeId="830"/>
+                </Shape>
+              </TransformGroup>
+            </TransformGroup>
+            <TransformGroup name="visuals" nodeId="831">
+              <Shape name="grid" shapeId="20" clipDistance="300" nodeId="832" castsShadows="true" receiveShadows="true" materialIds="753"/>
+              <Shape name="stickers_decal" translation="0 0.373501 0.224648" shapeId="21" clipDistance="30" nodeId="833" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="751,742"/>
+              <Shape name="screws_decal" translation="0 0.373501 0.224648" shapeId="22" clipDistance="30" nodeId="834" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="744,750"/>
+              <Shape name="hose_mountings" translation="-0.080701 0.961456 0.2517" shapeId="23" clipDistance="300" nodeId="835" castsShadows="true" receiveShadows="true" materialIds="749,746"/>
+            </TransformGroup>
+            <TransformGroup name="collisions" nodeId="836">
+              <Shape name="colPart01" translation="0 0.942328 0" shapeId="24" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="837" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="755"/>
+              <Shape name="colPart02" translation="0 0.10019 -0.133278" shapeId="25" compoundChild="true" collisionFilterGroup="0x10004" collisionFilterMask="0xfe3ffb83" density="0.001" nodeId="838" castsShadows="true" receiveShadows="true" nonRenderable="true" materialIds="755"/>
+            </TransformGroup>
+            <TransformGroup name="drillUnitJoint" nodeId="839"/>
+            <TransformGroup name="drillHydraulicJointAnim" translation="0.00063 1.63679 0.278591" nodeId="840"/>
+            <TransformGroup name="lockBolt01" translation="-0.1485 1.72 -0.166674" clipDistance="300" nodeId="841"/>
+            <TransformGroup name="lockBolt02" translation="-0.01766 1.72784 -0.201797" clipDistance="300" nodeId="842"/>
+          </TransformGroup>
+        </TransformGroup>
+        <TransformGroup name="samplingNode" translation="0 0 -0.073856" nodeId="843"/>
+        <TransformGroup name="visuals" nodeId="844">
+          <Shape name="screws_decal" translation="0 0.373501 0.224648" shapeId="26" clipDistance="30" nodeId="845" castsShadows="false" receiveShadows="true" decalLayer="1" materialIds="750"/>
+          <Shape name="hose_conenctors" translation="-0.080701 0.961456 0.2517" shapeId="27" clipDistance="300" nodeId="846" castsShadows="true" receiveShadows="true" materialIds="749"/>
+        </TransformGroup>
+        <TransformGroup name="rootJoint" nodeId="847"/>
+      </Shape>
+      <TransformGroup name="skinnedMeshes" nodeId="848">
+        <Shape name="hoses01" translation="0 0.373501 0.224648" shapeId="28" clipDistance="300" nodeId="849" castsShadows="true" receiveShadows="true" skinBindNodeIds="847 839 821" materialIds="754"/>
+        <Shape name="hoses02" translation="-0.110352 1.00324 0.200809" shapeId="29" clipDistance="300" nodeId="850" castsShadows="true" receiveShadows="true" skinBindNodeIds="847 839 807 840" materialIds="754"/>
+      </TransformGroup>
+    </Shape>
+  </Scene>
+
+  <UserAttributes>
+    <UserAttribute nodeId="807">
+      <Attribute name="liw" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="821">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="839">
+      <Attribute name="liw" type="boolean" value="false"/>
+    </UserAttribute>
+    <UserAttribute nodeId="840">
+      <Attribute name="liw" type="boolean" value="true"/>
+    </UserAttribute>
+    <UserAttribute nodeId="847">
+      <Attribute name="liw" type="boolean" value="true"/>
+    </UserAttribute>
+  </UserAttributes>
+
+</i3D>

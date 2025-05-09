@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<l10n>
+    <elements>
+        <e k="function_soilSampler" v="With a soil sampling unit you can take soil samples to have more detailed information about a field for future working steps."/>
+    </elements>
+</l10n>
