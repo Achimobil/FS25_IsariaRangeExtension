@@ -2,5 +2,6 @@
 <l10n>
     <elements>
         <e k="function_soilSampler" v="With a soil sampling unit you can take soil samples to have more detailed information about a field for future working steps."/>
+        <e k="function_cropSensor" v="With a crop sensor you can measure the real nitrogen uptake of the crop to apply more precise fertilizer rates."/>
     </elements>
 </l10n>

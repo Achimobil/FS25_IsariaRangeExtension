@@ -58,7 +58,7 @@ Folgendes ist für alle Varianten identisch:
         <storeItem xmlFilename="vehicles/fritzmeier/isariaScout/isariaScoutL.xml"/>
         <storeItem xmlFilename="vehicles/fritzmeier/isariaScout/isariaScoutXL.xml"/>
         <storeItem xmlFilename="vehicles/fritzmeier/isariaScout/isariaScoutXXL.xml"/>
-        <!-- <storeItem xmlFilename="vehicles/fritzmeier/isariaProActive/isariaProActive.xml"/> -->
+        <storeItem xmlFilename="vehicles/fritzmeier/isariaProActive/isariaProActive.xml"/>
     </storeItems>
 
     <l10n filenamePrefix="l10n/l10n"/>

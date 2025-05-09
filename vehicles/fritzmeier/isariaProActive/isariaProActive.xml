@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
+<vehicle type="FS25_precisionFarming.cropSensor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/vehicle.xsd">
+    <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
+
+    <storeData>
+        <name>PRO Active</name>
+        <specs>
+        </specs>
+        <functions>
+            <function>$l10n_function_cropSensor</function>
+        </functions>
+        <rotation>0</rotation>
+        <image>vehicles/fritzmeier/isariaProActive/store_isariaProActive.png</image>
+        <price>23900</price>
+        <lifetime>600</lifetime>
+        <brand>ISARIA</brand>
+        <category>misc</category>
+        <shopLoadingDelay config="0.15"/>
+        <shopTranslationOffset>0 -0.001 0</shopTranslationOffset>
+        <shopRotationOffset>0 0.059 0</shopRotationOffset>
+        <shopHeight>2.2</shopHeight>
+    </storeData>
+
+    <base>
+        <typeDesc>$l10n_typeDesc_cropSensor</typeDesc>
+        <filename>vehicles/fritzmeier/isariaProActive/isariaProActive.i3d</filename>
+        <size width="2.45" length="0.95" height="2.92" lengthOffset="-0.1"/>
+        <speedLimit value="18"/>
+        <components>
+            <component centerOfMass="0 0.2 0" solverIterationCount="10" mass="150"/>
+        </components>
+        <schemaOverlay attacherJointPosition="0 0" name="IMPLEMENT"/>
+    </base>
+
+    <configurationSets>
+        <configurationSet name="$l10n_configuration_valueDefault">
+            <configuration name="inputAttacherJoint" index="1"/>
+            <configuration name="attacherJoint" index="1"/>
+        </configurationSet>
+        <configurationSet name="Tenwinkel TOP 450">
+            <configuration name="inputAttacherJoint" index="2"/>
+            <configuration name="attacherJoint" index="2"/>
+        </configurationSet>
+        <configurationSet name="Tenwinkel FGB 600">
+            <configuration name="inputAttacherJoint" index="3"/>
+            <configuration name="attacherJoint" index="3"/>
+        </configurationSet>
+        <configurationSet name="Tenwinkel PAC-750">
+            <configuration name="inputAttacherJoint" index="4"/>
+            <configuration name="attacherJoint" index="1"/>
+        </configurationSet>
+        <configurationSet name="Tenwinkel PAC-1000">
+            <configuration name="inputAttacherJoint" index="5"/>
+            <configuration name="attacherJoint" index="1"/>
+        </configurationSet>
+        <configurationSet name="Tenwinkel GUSSCOM 1250">
+            <configuration name="inputAttacherJoint" index="6"/>
+            <configuration name="attacherJoint" index="4"/>
+        </configurationSet>
+        <configurationSet name="Tenwinkel PAC-1500">
+            <configuration name="inputAttacherJoint" index="7"/>
+            <configuration name="attacherJoint" index="1"/>
+        </configurationSet>
+        <configurationSet name="Tenwinkel B2500">
+            <configuration name="inputAttacherJoint" index="8"/>
+            <configuration name="attacherJoint" index="5"/>
+        </configurationSet>
+    </configurationSets>
+
+    <attachable>
+        <inputAttacherJointConfigurations>
+            <inputAttacherJointConfiguration name="$l10n_configuration_valueDefault" price="0" connectionHoseConfigId="1">
+                <inputAttacherJoint node="attacherJoint" jointType="implement" topReferenceNode="topReferenceNode" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0">
+                    <distanceToGround lower="0.55" upper="1"/>
+                </inputAttacherJoint>
+                <objectChange node="defaultConfiguration" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="weightFrame" visibilityActive="false" visibilityInactive="true"/>
+                <objectChange node="supportCol" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="proActive_main_component1" massActive="150"/>
+            </inputAttacherJointConfiguration>
+            <inputAttacherJointConfiguration price="750" connectionHoseConfigId="2">
+                <inputAttacherJoint node="attacherJointWeight450" jointType="implement" topReferenceNode="topReferenceNodeWeight450" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0">
+                    <distanceToGround lower="0.6" upper="1"/>
+                </inputAttacherJoint>
+                <objectChange node="weightConfiguration450" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="weight450ColPart" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="weightFrameExtension" translationActive="0 -0.1833 0"/>
+                <objectChange node="weightFrameTopArm" rotationActive="1.99 0 0"/>
+                <objectChange node="weightFrameTopArmExtension" translationActive="0 0 -0.042"/>
+                <objectChange node="proActive_main_component1" massActive="600"/>
+                <foliageBendingModifier index="2" minX="-0.4" maxX="0.4" minZ="-0.3" maxZ="0.3"/>
+            </inputAttacherJointConfiguration>
+            <inputAttacherJointConfiguration price="1000" connectionHoseConfigId="2">
+                <inputAttacherJoint node="attacherJointWeight600" jointType="implement" topReferenceNode="topReferenceNodeWeight600" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0">
+                    <distanceToGround lower="0.6" upper="1"/>
+                </inputAttacherJoint>
+                <objectChange node="weightConfiguration600" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="weight600ColPart" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="weightFrameExtension" translationActive="0 -0.0888 0"/>
+                <objectChange node="weightFrameTopArm" rotationActive="-9.38 0 0"/>
+                <objectChange node="weightFrameTopArmExtension" translationActive="0 0 -0.074"/>
+                <objectChange node="proActive_main_component1" massActive="750"/>
+                <foliageBendingModifier index="2" minX="-0.4" maxX="0.4" minZ="-0.48" maxZ="0.22"/>
+            </inputAttacherJointConfiguration>
+            <inputAttacherJointConfiguration price="1250" connectionHoseConfigId="2">
+                <inputAttacherJoint node="attacherJointWeight750" jointType="implement" topReferenceNode="topReferenceNodeWeight750" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0">
+                    <distanceToGround lower="0.6" upper="1"/>
+                </inputAttacherJoint>
+                <objectChange node="weightConfiguration750" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="weight750ColPart" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="weightFrameExtension" translationActive="0 -0.0606 0"/>
+                <objectChange node="weightFrameTopArm" rotationActive="-19.76 0 0"/>
+                <objectChange node="weightFrameTopArmExtension" translationActive="0 0 -0.017"/>
+                <objectChange node="proActive_main_component1" massActive="900"/>
+                <foliageBendingModifier index="2" minX="-0.4" maxX="0.4" minZ="-0.43" maxZ="0.35"/>
+            </inputAttacherJointConfiguration>
+            <inputAttacherJointConfiguration price="1700" connectionHoseConfigId="2">
+                <inputAttacherJoint node="attacherJointWeight1000" jointType="implement" topReferenceNode="topReferenceNodeWeight1000" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0">
+                    <distanceToGround lower="0.6" upper="1"/>
+                </inputAttacherJoint>
+                <objectChange node="weightConfiguration1000" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="weight1000ColPart" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="weightFrameExtension" translationActive="0 -0.03486 0"/>
+                <objectChange node="weightFrameTopArm" rotationActive="-20.2 0 0"/>
+                <objectChange node="weightFrameTopArmExtension" translationActive="0 0 -0.017"/>
+                <objectChange node="proActive_main_component1" massActive="1150"/>
+                <foliageBendingModifier index="2" minX="-0.4" maxX="0.4" minZ="-0.45" maxZ="0.35"/>
+            </inputAttacherJointConfiguration>
+            <inputAttacherJointConfiguration price="2100" connectionHoseConfigId="2">
+                <inputAttacherJoint node="attacherJointWeight1250" jointType="implement" topReferenceNode="topReferenceNodeWeight1250" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0">
+                    <distanceToGround lower="0.6" upper="1"/>
+                </inputAttacherJoint>
+                <objectChange node="weightConfiguration1250" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="weight1250ColPart" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="weightFrameExtension" translationActive="0 -0.0568 0"/>
+                <objectChange node="weightFrameTopArm" rotationActive="-9.94 0 0"/>
+                <objectChange node="weightFrameTopArmExtension" translationActive="0 0 -0.037"/>
+                <objectChange node="proActive_main_component1" massActive="1400"/>
+                <foliageBendingModifier index="2" minX="-0.56" maxX="0.56" minZ="-0.32" maxZ="0.32"/>
+            </inputAttacherJointConfiguration>
+            <inputAttacherJointConfiguration price="2550" connectionHoseConfigId="2">
+                <inputAttacherJoint node="attacherJointWeight1500" jointType="implement" topReferenceNode="topReferenceNodeWeight1500" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0">
+                    <distanceToGround lower="0.6" upper="1"/>
+                </inputAttacherJoint>
+                <objectChange node="weightConfiguration1500" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="weight1500ColPart" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="weightFrameExtension" translationActive="0 -0.036 0"/>
+                <objectChange node="weightFrameTopArm" rotationActive="-19.8 0 0"/>
+                <objectChange node="weightFrameTopArmExtension" translationActive="0 0 -0.067"/>
+                <objectChange node="proActive_main_component1" massActive="1650"/>
+                <foliageBendingModifier index="2" minX="-0.78" maxX="0.78" minZ="-0.45" maxZ="0.33"/>
+            </inputAttacherJointConfiguration>
+            <inputAttacherJointConfiguration price="4250" connectionHoseConfigId="2">
+                <inputAttacherJoint node="attacherJointWeight2500" jointType="implement" topReferenceNode="topReferenceNodeWeight2500" lowerTransLimitScale="0 1 0" lowerRotLimitScale="0 0 0" upperRotationOffset="0" lowerRotationOffset="0">
+                    <distanceToGround lower="0.7" upper="1"/>
+                </inputAttacherJoint>
+                <objectChange node="weightConfiguration2500" visibilityActive="true" visibilityInactive="false"/>
+                <objectChange node="weight2500ColPart" compoundChildActive="true" compoundChildInactive="false"/>
+                <objectChange node="weightFrameExtension" translationActive="0 0.0197 0"/>
+                <objectChange node="weightFrameTopArm" rotationActive="-20.53 0 0"/>
+                <objectChange node="weightFrameTopArmExtension" translationActive="0 0 -0.126"/>
+                <objectChange node="proActive_main_component1" massActive="2650"/>
+                <foliageBendingModifier index="2" minX="-0.77" maxX="0.77" minZ="-0.45" maxZ="0.36"/>
+            </inputAttacherJointConfiguration>
+        </inputAttacherJointConfigurations>
+
+        <support animationName="moveSupport"/>
+    </attachable>
+
+    <attacherJoints>
+        <attacherJointConfigurations>
+            <attacherJointConfiguration />
+            <attacherJointConfiguration>
+                <attacherJoint node="trailerAttacherJointWeight450" jointType="trailer" lowerRotLimit="25 75 50" allowsJointLimitMovement="false" >
+                    <schema position="1 0" rotation="0" invertX="false" />
+                </attacherJoint>
+            </attacherJointConfiguration>
+            <attacherJointConfiguration>
+                <attacherJoint node="trailerAttacherJointWeight600" jointType="trailer" lowerRotLimit="25 75 50" allowsJointLimitMovement="false" >
+                    <schema position="1 0" rotation="0" invertX="false" />
+                </attacherJoint>
+            </attacherJointConfiguration>
+            <attacherJointConfiguration>
+                <attacherJoint node="trailerAttacherJointWeight1250" jointType="trailer" lowerRotLimit="25 50 50" allowsJointLimitMovement="false" >
+                    <schema position="1 0" rotation="0" invertX="false" />
+                </attacherJoint>
+            </attacherJointConfiguration>
+            <attacherJointConfiguration>
+                <attacherJoint node="trailerAttacherJointWeight2500" jointType="trailer" lowerRotLimit="25 70 50" allowsJointLimitMovement="false" >
+                    <schema position="1 0" rotation="0" invertX="false" />
+                </attacherJoint>
+            </attacherJointConfiguration>
+        </attacherJointConfigurations>
+
+        <sounds>
+            <attach template="attach01" linkNode="0>" />
+        </sounds>
+    </attacherJoints>
+
+    <connectionHoses>
+        <connectionHoseConfigurations>
+            <connectionHoseConfiguration>
+                <hose inputAttacherJointIndices="1" type="electric" node="electricDefault" adapterNode="electricDefault_connector" length="1.0" diameter="0.013">
+                    <objectChange node="electricDefault_detached" visibilityActive="false" visibilityInactive="true"/>
+                </hose>
+            </connectionHoseConfiguration>
+            <connectionHoseConfiguration>
+                <hose inputAttacherJointIndices="1" type="electric" node="electricWeight" adapterNode="electricWeight_connector" length="1.0" diameter="0.013" minDeltaY="-0.2">
+                    <objectChange node="electricWeight_detached" visibilityActive="false" visibilityInactive="true"/>
+                </hose>
+            </connectionHoseConfiguration>
+        </connectionHoseConfigurations>
+    </connectionHoses>
+
+    <foldable>
+        <foldingConfigurations>
+            <foldingConfiguration>
+                <foldingParts startMoveDirection="0">
+                    <foldingPart animationName="folding" speedScale="1" />
+                </foldingParts>
+            </foldingConfiguration>
+        </foldingConfigurations>
+    </foldable>
+
+    <animations>
+        <animation name="folding">
+            <part node="armLeft"      startTime="0" endTime="3" startRot="0 0 102.5"  endRot="0 0 10" />
+            <part node="armRight"     startTime="0" endTime="3" startRot="0 0 -102.5" endRot="0 0 -10" />
+            <part node="armLeftPart"  startTime="0" endTime="3" startRot="0 0 -108"   endRot="0 0 -10" />
+            <part node="armRightPart" startTime="0" endTime="3" startRot="0 0 108"    endRot="0 0 10" />
+
+            <sound file="sounds/tools/isaria_electric_loop.wav" startTime="0.01" endTime="2.99" volumeScale="0.3" pitchScale="2">
+                <volume indoor="0.2" outdoor="1"/>
+                <lowpassGain indoor="0.3" outdoor="1.00" />
+            </sound>
+            <sound template="clackVar6"      startTime="2.99" direction="1"  volumeScale="0.5" pitchScale="1.1"/>
+            <sound template="sheetImp02"     startTime="2.99" direction="1"  volumeScale="1"   pitchScale="1.4"/>
+            <sound template="sheetImp02"     startTime="0.01" direction="-1" volumeScale="1"   pitchScale="1.4"/>
+            <sound template="metalClose"     startTime="0.01" direction="-1" volumeScale="0.3" pitchScale="3.8"/>
+            <sound template="clackVar6"      startTime="0.01" direction="-1" volumeScale="0.5" pitchScale="1.4"/>
+        </animation>
+        <animation name="moveSupport">
+            <part node="supportArm"          startTime="0"   endTime="0.1" visibility="false" />
+            <part node="supportArm"          startTime="0.0" endTime="0"   visibility="true" />
+            <part node="supportArm_detached" startTime="0"   endTime="0.1" visibility="true" />
+            <part node="supportArm_detached" startTime="0.0" endTime="0"   visibility="false" />
+            <part node="supportCol"          startTime="0"   endTime="0.1" startTrans="0 0.4 0" endTrans="0 -0.195 0" />
+
+            <sound template="clackVar6" startTime="0.09" direction="-1" volumeScale="1" pitchScale="1.2"/>
+        </animation>
+    </animations>
+
+    <cylindered>
+        <movingTools>
+            <movingTool node="armLeft" playSound="true">
+                <dependentPart node="armLeftHydraulic" />
+            </movingTool>
+            <movingTool node="armRight" playSound="true">
+                <dependentPart node="armRightHydraulic" />
+            </movingTool>
+            <movingTool node="armLeftPart">
+                <dependentPart node="armLeftPartHydraulic" />
+            </movingTool>
+            <movingTool node="armRightPart">
+                <dependentPart node="armRightPartHydraulic" />
+            </movingTool>
+        </movingTools>
+
+        <movingParts>
+            <movingPart node="armLeftHydraulic" referencePoint="armLeftHydraulicRef" referenceFrame="armLeftHydraulicRef">
+                <translatingPart node="armLeftHydraulicPunch" />
+            </movingPart>
+            <movingPart node="armLeftPartHydraulic" referencePoint="armLeftPartHydraulicRef" referenceFrame="armLeftPartHydraulicRef">
+                <translatingPart node="armLeftPartHydraulicPunch" />
+            </movingPart>
+            <movingPart node="armRightHydraulic" referencePoint="armRightHydraulicRef" referenceFrame="armRightHydraulicRef">
+                <translatingPart node="armRightHydraulicPunch" />
+            </movingPart>
+            <movingPart node="armRightPartHydraulic" referencePoint="armRightPartHydraulicRef" referenceFrame="armRightPartHydraulicRef">
+                <translatingPart node="armRightPartHydraulicPunch" />
+            </movingPart>
+        </movingParts>
+    </cylindered>
+
+    <ai>
+        <agentAttachment width="2.45" height="2.93" length="0.9" lengthOffset="-0.12"/>
+    </ai>
+
+    <cropSensor>
+        <sensorNode node="sensorNodeLeft"  radius="50" shape="CIRCLE" lightNode="sensorLightLeft"  staticLight="sensorLightLeftStatic"/>
+        <sensorNode node="sensorNodeRight" radius="50" shape="CIRCLE" lightNode="sensorLightRight" staticLight="sensorLightRightStatic"/>
+    </cropSensor>
+
+    <foliageBending>
+        <bendingNode minX="-1.25" maxX="1.25" minZ="-0.3" maxZ="0.3" yOffset="0.7"/>
+        <bendingNode minX="0" maxX="0" minZ="0" maxZ="0" yOffset="0.02"/>
+        <bendingNode minX="0" maxX="2.45" minZ="-0.15" maxZ="0.15" yOffset="0.12" node="armLeft"/>
+        <bendingNode minX="-2.45" maxX="0" minZ="-0.15" maxZ="0.15" yOffset="0.12" node="armRight"/>
+    </foliageBending>
+
+    <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
+    <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
+
+    <designColorConfigurations useDefaultColors="true" title="$l10n_configuration_coverColor">
+        <designColorConfiguration color="0.0027 0.0704 0.2502" name="$l10n_configuration_valueDefault"/>
+
+        <material materialSlotName="coverMaterial"/>
+    </designColorConfigurations>
+
+    <designColor2Configurations useDefaultColors="true">
+        <designColor2Configuration color="0.0296 0.0296 0.0319" name="$l10n_configuration_valueDefault"/>
+
+        <material materialSlotName="base_mat"/>
+    </designColor2Configurations>
+
+    <designColor3Configurations useDefaultColors="true">
+        <designColor3Configuration color="0.47 0.47 0.47" name="$l10n_configuration_valueDefault"/>
+
+        <material materialSlotName="designMaterial"/>
+    </designColor3Configurations>
+
+    <i3dMappings>
+        <i3dMapping id="proActive_main_component1" node="0>" />
+        <i3dMapping id="proActive_vis" node="0>0" />
+        <i3dMapping id="armLeft" node="0>0|0|0" />
+        <i3dMapping id="armLeftPart" node="0>0|0|0|0" />
+        <i3dMapping id="armLeftPartHydraulic" node="0>0|0|0|0|0" />
+        <i3dMapping id="armLeftPartHydraulicPunch" node="0>0|0|0|0|0|0" />
+        <i3dMapping id="sensorLightLeft" node="0>0|0|0|0|1" />
+        <i3dMapping id="sensorLightLeftStatic" node="0>0|0|0|0|2" />
+        <i3dMapping id="armLeftHydraulicRef" node="0>0|0|0|1" />
+        <i3dMapping id="armLeftPartHydraulicRef" node="0>0|0|0|2" />
+        <i3dMapping id="sensorNodeLeft" node="0>0|0|0|3" />
+        <i3dMapping id="armLeftHydraulic" node="0>0|0|1" />
+        <i3dMapping id="armLeftHydraulicPunch" node="0>0|0|1|0" />
+        <i3dMapping id="armRight" node="0>0|0|2" />
+        <i3dMapping id="armRightPart" node="0>0|0|2|0" />
+        <i3dMapping id="armRightPartHydraulic" node="0>0|0|2|0|0" />
+        <i3dMapping id="armRightPartHydraulicPunch" node="0>0|0|2|0|0|0" />
+        <i3dMapping id="sensorLightRight" node="0>0|0|2|0|1" />
+        <i3dMapping id="sensorLightRightStatic" node="0>0|0|2|0|2" />
+        <i3dMapping id="armRightHydraulicRef" node="0>0|0|2|1" />
+        <i3dMapping id="armRightPartHydraulicRef" node="0>0|0|2|2" />
+        <i3dMapping id="sensorNodeRight" node="0>0|0|2|3" />
+        <i3dMapping id="armRightHydraulic" node="0>0|0|3" />
+        <i3dMapping id="armRightHydraulicPunch" node="0>0|0|3|0" />
+        <i3dMapping id="defaultConfiguration" node="0>0|1|0" />
+        <i3dMapping id="attacherJoint" node="0>0|1|0|0" />
+        <i3dMapping id="topReferenceNode" node="0>0|1|0|1" />
+        <i3dMapping id="supportArm_detached" node="0>0|1|0|2|0" />
+        <i3dMapping id="wheels_detached" node="0>0|1|0|2|0|0" />
+        <i3dMapping id="smallWheel01" node="0>0|1|0|2|0|0|0" />
+        <i3dMapping id="smallWheel02" node="0>0|1|0|2|0|0|1" />
+        <i3dMapping id="smallWheel03" node="0>0|1|0|2|0|0|2" />
+        <i3dMapping id="smallWheel04" node="0>0|1|0|2|0|0|3" />
+        <i3dMapping id="supportArm" node="0>0|1|0|2|1" />
+        <i3dMapping id="wheels" node="0>0|1|0|2|1|0" />
+        <i3dMapping id="smallWheel05" node="0>0|1|0|2|1|0|0" />
+        <i3dMapping id="smallWheel06" node="0>0|1|0|2|1|0|1" />
+        <i3dMapping id="smallWheel07" node="0>0|1|0|2|1|0|2" />
+        <i3dMapping id="smallWheel08" node="0>0|1|0|2|1|0|3" />
+        <i3dMapping id="electricDefault" node="0>0|1|0|5|0" />
+        <i3dMapping id="electricDefault_detached" node="0>0|1|0|5|0|0" />
+        <i3dMapping id="electricDefault_connector" node="0>0|1|0|5|0|0|0" />
+        <i3dMapping id="weightConfiguration450" node="0>0|1|1" />
+        <i3dMapping id="attacherJointWeight450" node="0>0|1|1|0" />
+        <i3dMapping id="topReferenceNodeWeight450" node="0>0|1|1|1" />
+        <i3dMapping id="trailerAttacherJointWeight450" node="0>0|1|1|2" />
+        <i3dMapping id="tensionBeltMesh450" node="0>0|1|1|4" />
+        <i3dMapping id="weight450ColPart" node="0>0|1|1|5" />
+        <i3dMapping id="weightConfiguration600" node="0>0|1|2" />
+        <i3dMapping id="attacherJointWeight600" node="0>0|1|2|0" />
+        <i3dMapping id="topReferenceNodeWeight600" node="0>0|1|2|1" />
+        <i3dMapping id="trailerAttacherJointWeight600" node="0>0|1|2|2" />
+        <i3dMapping id="logos_decals" node="0>0|1|2|3" />
+        <i3dMapping id="weight600ColPart" node="0>0|1|2|4" />
+        <i3dMapping id="tensionBeltMesh600" node="0>0|1|2|5" />
+        <i3dMapping id="weightConfiguration750" node="0>0|1|3" />
+        <i3dMapping id="attacherJointWeight750" node="0>0|1|3|0" />
+        <i3dMapping id="topReferenceNodeWeight750" node="0>0|1|3|1" />
+        <i3dMapping id="weight750ColPart" node="0>0|1|3|3" />
+        <i3dMapping id="tensionBeltMesh750" node="0>0|1|3|4" />
+        <i3dMapping id="weightConfiguration1000" node="0>0|1|4" />
+        <i3dMapping id="attacherJointWeight1000" node="0>0|1|4|0" />
+        <i3dMapping id="topReferenceNodeWeight1000" node="0>0|1|4|1" />
+        <i3dMapping id="weight1000ColPart" node="0>0|1|4|3" />
+        <i3dMapping id="tensionBeltMesh1000" node="0>0|1|4|4" />
+        <i3dMapping id="weightConfiguration1250" node="0>0|1|5" />
+        <i3dMapping id="attacherJointWeight1250" node="0>0|1|5|0" />
+        <i3dMapping id="topReferenceNodeWeight1250" node="0>0|1|5|1" />
+        <i3dMapping id="trailerAttacherJointWeight1250" node="0>0|1|5|2" />
+        <i3dMapping id="tensionBeltMesh1250" node="0>0|1|5|4" />
+        <i3dMapping id="weight1250ColPart" node="0>0|1|5|5" />
+        <i3dMapping id="weightConfiguration1500" node="0>0|1|6" />
+        <i3dMapping id="attacherJointWeight1500" node="0>0|1|6|0" />
+        <i3dMapping id="topReferenceNodeWeight1500" node="0>0|1|6|1" />
+        <i3dMapping id="weight1500ColPart" node="0>0|1|6|3" />
+        <i3dMapping id="tensionBeltMesh1500" node="0>0|1|6|4" />
+        <i3dMapping id="weightConfiguration2500" node="0>0|1|7" />
+        <i3dMapping id="attacherJointWeight2500" node="0>0|1|7|0" />
+        <i3dMapping id="topReferenceNodeWeight2500" node="0>0|1|7|1" />
+        <i3dMapping id="trailerAttacherJointWeight2500" node="0>0|1|7|2" />
+        <i3dMapping id="weight2500ColPart" node="0>0|1|7|4" />
+        <i3dMapping id="tensionBeltMesh2500" node="0>0|1|7|5" />
+        <i3dMapping id="weightFrame" node="0>0|1|8" />
+        <i3dMapping id="weightFrameTopArm" node="0>0|1|8|0|0" />
+        <i3dMapping id="weightFrameTopArmExtension" node="0>0|1|8|0|0|0" />
+        <i3dMapping id="weightFrameExtension" node="0>0|1|8|1" />
+        <i3dMapping id="electricWeight" node="0>0|1|8|3|0" />
+        <i3dMapping id="electricWeight_detached" node="0>0|1|8|3|0|0" />
+        <i3dMapping id="electricWeight_connector" node="0>0|1|8|3|0|0|0" />
+        <i3dMapping id="supportCol" node="0>1|1" />
+    </i3dMappings>
+</vehicle>
