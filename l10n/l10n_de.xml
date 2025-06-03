@@ -3,5 +3,7 @@
     <elements>
         <e k="function_soilSampler" v="Mit einem Bodenprobenentnahmegerät können Bodenproben entnommen werden, um für spätere Arbeitsschritte genauere Informationen über den Boden zu bekommen."/>
         <e k="function_cropSensor" v="Mit einem Pflanzensensor ist es möglich, den genauen Stickstoffbedarf deiner Pflanzen zu erkennen und präzisere Düngemengen auszubringen."/>
+        <e k="typeDesc_cropSensor" v="Pflanzensensor"/>
+        <e k="typeDesc_soilSampler" v="Bodenprobenentnahmegerät"/>
     </elements>
 </l10n>
