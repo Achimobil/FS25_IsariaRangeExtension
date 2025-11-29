@@ -1,7 +1,7 @@
 # FS25_IsariaRangeExtension
 
 # ModHub
-soon
+https://www.farming-simulator.com/mod.php?mod_id=322755&title=fs2025
 
 # Build my Mods self
 Deutsche Anleitung: https://youtu.be/qG8wNBkjB3w
