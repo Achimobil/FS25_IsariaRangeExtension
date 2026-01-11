@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<modDesc descVersion="99">
+<modDesc descVersion="105">
     <author>Achimobil</author>
-    <version>1.0.0.0</version>
+    <version>1.0.1.0</version>
     <title>
         <en>ISARIA Color And Range Extension</en>
         <de>ISARIA Farben Und Reichweiten Erweiterung</de>
@@ -23,6 +23,9 @@ Included are 4 variants with different scanner ranges:
 The following applies to all variants:
 - Base price: $17,000 (SCOUT) and $23,900 (PRO Active)
 - Color customization cost: $150 / $50
+
+Changelog 1.0.1.0
+- More Colorpossibilies (Thans to Jin for sharing with us)
 ]]>
         </en>
         <de>
@@ -41,6 +44,9 @@ Enthalten sind 4 Varianten mit unterschiedlicher Scanner-Reichweite:
 Für alle Varianten gilt:
 - Grundpreis: 17.000 € (SCOUT) und 23.900 € (PRO Active)
 - Kosten für Farbwahl: 150 €/50 €
+
+Changelog 1.0.1.0
+- Mehr Farbmöglichkeiten (Danke an Jin für die Bereitstellung)
 ]]>
         </de>
     </description>
