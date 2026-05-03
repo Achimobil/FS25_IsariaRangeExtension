@@ -178,14 +178,30 @@
     <wearable wearDuration="480" workMultiplier="5" fieldMultiplier="2"/>
     <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
 
+    <baseColorConfigurations useDefaultColors="true" title="$l10n_configuration_baseColor">
+        <baseColorConfiguration materialTemplateName="ISARIA_BLUE1" name="$l10n_configuration_valueDefault"/>
+        <baseColorConfiguration materialTemplateName="CANAM_COMPASS_GREEN" name="Can-Am Green"/>
+        <baseColorConfiguration materialTemplateName="KUBOTA_ORANGE1" name="Kubota Orange"/>
+
+        <material materialSlotName="isariaPainted_color01"/>
+        <material materialSlotName="isariaPainted_color02"/>
+        <material materialSlotName="isariaPainted_color03"/>
+    </baseColorConfigurations>
+	
     <designColorConfigurations useDefaultColors="true" title="$l10n_configuration_frontGuard">
         <designColorConfiguration materialTemplateName="chrome" name="$l10n_ui_colorChrome"/>
-
+        <designColorConfiguration materialTemplateName="ISARIA_BLUE1" name="Isaria Blue"/>
+        <designColorConfiguration materialTemplateName="CANAM_COMPASS_GREEN" name="Can-Am Green"/>
+        <designColorConfiguration materialTemplateName="KUBOTA_ORANGE1" name="Kubota Orange"/>
+		
         <material materialSlotName="isariaGrid"/>
     </designColorConfigurations>
 
-    <designColor2Configurations useDefaultColors="true" title="$l10n_configuration_designColor">
+    <designColor2Configurations useDefaultColors="true" title="$l10n_configuration_hoseColor">
         <designColor2Configuration color="0.0094 0.0094 0.0094" name="$l10n_configuration_valueDefault"/>
+        <designColor2Configuration materialTemplateName="ISARIA_BLUE1" name="Isaria Blue"/>
+        <designColor2Configuration materialTemplateName="CANAM_COMPASS_GREEN" name="Can-Am Green"/>
+        <designColor2Configuration materialTemplateName="KUBOTA_ORANGE1" name="Kubota Orange"/>
 
         <material materialSlotName="isariaHoses"/>
     </designColor2Configurations>

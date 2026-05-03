@@ -5,5 +5,8 @@
         <e k="function_cropSensor" v="Mit einem Pflanzensensor ist es möglich, den genauen Stickstoffbedarf deiner Pflanzen zu erkennen und präzisere Düngemengen auszubringen."/>
         <e k="typeDesc_cropSensor" v="Pflanzensensor"/>
         <e k="typeDesc_soilSampler" v="Bodenprobenentnahmegerät"/>
+		<e k="configuration_hoseColor" v="Schlauchfarbe"/>
+		<e k="configuration_weightsColor" v="Gewichte Farbe"/>
+		<e k="configuration_frameColor" v="Rahmenfarbe"/>
     </elements>
 </l10n>
