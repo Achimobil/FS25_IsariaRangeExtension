@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="no" ?>
-<vehicle type="FS25_precisionFarming.cropSensor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../../../bin/shared/xml/schema/vehicle.xsd">
+<vehicle type="FS25_precisionFarming.cropSensor" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://validation.gdn.giants-software.com/xml/fs25/vehicle.xsd">
     <annotation>Copyright (C) GIANTS Software GmbH, All Rights Reserved.</annotation>
 
     <storeData>
@@ -302,27 +302,27 @@
     <washable dirtDuration="90" washDuration="1" workMultiplier="2" fieldMultiplier="2"/>
 
     <baseColorConfigurations useDefaultColors="true" title="$l10n_configuration_baseColor">
-        <baseColorConfiguration materialTemplateName="ISARIA_BLUE1" name="$l10n_configuration_valueDefault"/>
-        <baseColorConfiguration materialTemplateName="CANAM_COMPASS_GREEN" name="Can-Am Green"/>
-        <baseColorConfiguration materialTemplateName="KUBOTA_ORANGE1" name="Kubota Orange"/>
+        <baseColorConfiguration materialTemplateName="ISARIA_BLUE1"/>
+        <baseColorConfiguration materialTemplateName="CANAM_COMPASS_GREEN"/>
+        <baseColorConfiguration materialTemplateName="KUBOTA_ORANGE1"/>
 
         <material materialSlotName="isariaPainted_color01"/>
     </baseColorConfigurations>
 
     <designColorConfigurations useDefaultColors="true" title="$l10n_configuration_weightsColor">
         <designColorConfiguration materialTemplateName="SHARED_BLACKJET" title="$l10n_configuration_valueDefault"/>
-        <designColorConfiguration materialTemplateName="ISARIA_BLUE1" name="Isaria Blue"/>
-        <designColorConfiguration materialTemplateName="CANAM_COMPASS_GREEN" name="Can-Am Green"/>
-        <designColorConfiguration materialTemplateName="KUBOTA_ORANGE1" name="Kubota Orange"/>
-		
+        <designColorConfiguration materialTemplateName="ISARIA_BLUE1"/>
+        <designColorConfiguration materialTemplateName="CANAM_COMPASS_GREEN"/>
+        <designColorConfiguration materialTemplateName="KUBOTA_ORANGE1"/>
+
         <material materialSlotName="base_mat"/>
     </designColorConfigurations>
 
     <designColor2Configurations useDefaultColors="true" title="$l10n_configuration_frameColor">
         <designColor2Configuration color="0.47 0.47 0.47" name="$l10n_configuration_valueDefault"/>
-        <designColor2Configuration materialTemplateName="ISARIA_BLUE1" name="Isaria Blue"/>
-        <designColor2Configuration materialTemplateName="CANAM_COMPASS_GREEN" name="Can-Am Green"/>
-        <designColor2Configuration materialTemplateName="KUBOTA_ORANGE1" name="Kubota Orange"/>
+        <designColor2Configuration materialTemplateName="ISARIA_BLUE1"/>
+        <designColor2Configuration materialTemplateName="CANAM_COMPASS_GREEN"/>
+        <designColor2Configuration materialTemplateName="KUBOTA_ORANGE1"/>
 
         <material materialSlotName="isariaFrame_color01"/>
     </designColor2Configurations>
